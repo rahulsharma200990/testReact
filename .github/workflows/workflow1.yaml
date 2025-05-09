@@ -16,8 +16,8 @@ jobs:
       - name: build the react code
         run: npm run build 
 
-      - name : upload build solution
+      - name: Upload atrtifacts
         uses: actions/upload-artifact@v4
         with:
-          name: ready-build
-          path: ready-build/
+          path: dist
+          name: dist-files
