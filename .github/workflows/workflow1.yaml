@@ -9,3 +9,9 @@ jobs:
     
       - name: Checkout code from github 
         uses: actions/checkout@v4
+    
+      - name : react dependecny install
+        run: npm ci 
+    
+      - name: build the react code
+        run: npm run build 
