@@ -6,3 +6,6 @@ jobs:
     steps:
       - name: Print Name
         run : echo "This is rahul sharma"
+    
+      - name: Checkout code from github 
+        uses: actions/checkout@v4
