@@ -15,3 +15,6 @@ jobs:
     
       - name: build the react code
         run: npm run build 
+        
+      - name : upload build solution
+        uses: actions/upload-artifact@v4
